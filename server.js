@@ -46,7 +46,7 @@ function pegarLinkCurto(callback,linkC, res)
           for (var i = 0; i <= dat.length - 1; i++) 
           {
             var shortLink = dat[i].shortUrl;
-            if (shortLink.replace("http://chr.dc/", "") == linkC) 
+            if (shortLink.replace("http://enc.lk/", "") == linkC) 
             {
               var resultado = dat[i].url;  //Define o resultado = o linkOriginal
             }
@@ -90,8 +90,7 @@ function verificar(callback, linkfeito, link, res)
             for (var i = 0; i <= dat.length - 1; i++) 
             {
                 var shortLink = dat[i].shortUrl;
-                console.log(shortLink);
-                if (shortLink.replace("http://chr.dc/", "") == linkfeito) 
+                if (shortLink.replace("http://enc.lk/", "") == linkfeito) 
                 {
                     var resultado = 1;
                 }
@@ -108,7 +107,7 @@ function verificar2(resultado, linkfeito, link, res)
       if (isUrl(link))
       {   //Verifica se é um link o texto inserido pelo usuario usando o Package is-url
         salvar(linkfeito, link);  //Se for um link ele chama a função de salvar o link
-        linkEnc = "Seu link curtinho: http://chr.dc/" + linkfeito;
+        linkEnc = "Seu link curtinho: http://enc.lk/" + linkfeito;
       }
       else
       {
@@ -129,7 +128,7 @@ function salvar(linkfeito, link) //Salva o linkCurto e linkOriginal no banco de 
     id: 'Miasde',             
     hits: 0, 
     url: link,
-    shortUrl: 'http://chr.dc/' + linkfeito
+    shortUrl: 'http://enc.lk/' + linkfeito
   };
 
   fs.readFile('hits.json', 'utf8', function readFileCallback(err, data){
@@ -153,7 +152,6 @@ function clicksF()
   var clicksS = fs.readFileSync('./clicks.json', 'utf-8', function (err, data) 
   {
     if(err) throw err;
-    console.log(data);
     var clicksS = JSON.stringify(data);
     return clicksS;
   });
