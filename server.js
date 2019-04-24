@@ -124,19 +124,21 @@ function verificar2(resultado, linkfeito, link, res)
 
 function salvar(linkfeito, link) //Salva o linkCurto e linkOriginal no banco de dado
 {
-  var values = {  
-    id: 'Miasde',             
-    hits: 0, 
-    url: link,
-    shortUrl: 'http://enc.lk/' + linkfeito
-  };
-
   fs.readFile('hits.json', 'utf8', function readFileCallback(err, data){
     if (err){
         console.log(err);
     } 
     else{
-        obj = JSON.parse(data); //now it an object
+        var obj = JSON.parse(data); //now it an object
+        var math = parseInt(obj[obj.length - 1].id) + 1;
+        
+        var values = {  
+          id: math.toString(),             
+          hits: 0, 
+          url: link,
+          shortUrl: 'http://enc.lk/' + linkfeito
+        };
+
         obj.push(values); //add some data
         json = JSON.stringify(obj, null, 2); //convert it back to json
         fs.writeFile('hits.json', json, 'utf8', function (err) {
@@ -172,3 +174,4 @@ app.listen(porta, function ()  //Abre o server na porta defenida na variavel por
 {   
   console.log('Online Porta: ' + porta);
 });
+// Obrigado deus por fazer eu conseguir fazer isso
