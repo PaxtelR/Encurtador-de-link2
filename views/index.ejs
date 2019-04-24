@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Encurtador de Link</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400|Roboto:100,300,400" rel="stylesheet">
+        <link href="/images/ico (1).ico" rel="shortcut icon">
+    </head>
+    <body>
+        <header>
+            <img src="images/logo-chaordic.png">
+        </header>
+        <main>
+            <div class="main-text">
+                <h1>Encurte seus links</h1>
+                <h3 style="font-family: 'Roboto'; font-weight: 300">Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.</h3>
+                <form action="" method="post">                        
+                    <div class="encurtar">                    
+                        <input id="link" name = "link" type="text" class="inputURL" value="" placeholder="Cole seu link aqui">
+                        <div class="encurtarBotao">
+                            <input class="botao" type="submit" value="ENCURTAR">
+                        </div>                    
+                    </div>
+                </form>
+                <h3 style="font-family: 'Roboto'; font-weight: 300"><%= linkEnc%></h3>
+                
+            </div>            
+        </main>
+        <div class="top5">
+            <h1>TOP 5</h1>
+        </div>
+        <div class="square">
+        </div>
+        <div class="hits">
+            <h1>HITS</h1>
+            <div class="contador">
+                <h2 style="font-family: 'Roboto'" ><%= clicks %></h2>
+            </div>
+            <h3 style="color: #777777;">Cliques em links</h3>
+        </div>
+        <footer>
+            <h4 class="chr">chr.dc</h4>
+            <img src="images/icon-facebook.png">
+            <img src="images/icon-twitter.png">
+        </footer>
+    </body>
+</html>

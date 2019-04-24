@@ -1,0 +1,135 @@
+body{
+    background: #FFF;
+    font-family: 'Roboto Slab', 'Roboto', sans-serif;
+}
+header{
+    margin: auto;
+    width: 70%;
+    height: 50px;
+    margin-top: 20px;
+}
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+main{
+    width: 90%;
+    background-image: url(../images/background-home.jpg);
+    background-color: #AA1423;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+.main-text{
+    font-family: 'Roboto Slab',  sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FFF;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+.encurtar{
+    display: table;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.inputURL{
+    width: 17em;
+    padding: 9px 10px;
+    height: 21px;
+    display: table-cell;
+    margin: 0;
+    font-family: 'Roboto Slab' 'Roboto' sans-serif;
+    font-weight: 600;
+    outline: none;
+    background: transparent;    
+    border: none;
+    border-bottom: 3px solid #ff6e14;
+    font-size: 16px;
+    color: #FFF;
+}
+::placeholder {
+    color: orange;
+    opacity: 0.6;
+}
+.encurtarBotao{
+    min-width: 40%;
+    display: table-cell;
+    vertical-align: middle;
+    display: table-cell;
+}
+input[type=submit]{
+    color: #FFF;
+    font-family: 'Roboto';
+    font-weight: 600;
+    background-color: #ff6e14;
+    padding: 14px 19px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    align-self: center;
+}
+.top5{
+    width: 70%;
+    margin: auto;
+    font-weight: 100;
+    color: #AA1423;
+    text-align: center;
+    padding-top: 50px;    
+}
+.hits{
+    width: 90%;
+    margin: auto;
+    padding: 50px 0px 10px;
+    background-color: #EEE;
+    color: #AA1423;
+    text-align: center;
+    font-weight: 400;
+}
+.contador{
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    width: 15%;
+}
+.contador h2{
+    margin: auto;
+    width: 100%;
+    border: 1px solid #AA1423;
+    background-color: #FFF;
+    font-size: 34px;    
+}
+footer{
+    padding-top: 1em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    font-weight: 300;    
+    color: #AA1423;
+    display: table;
+}
+footer img{
+    display: table-cell;
+    padding-right: 20px;
+    float: right;
+    border: none;
+}
+.chr{
+    text-align: start;
+    display: table-cell;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color:#fff;
+    transform: rotate(45deg);
+    margin: auto;
+    margin-bottom: 0;
+}
