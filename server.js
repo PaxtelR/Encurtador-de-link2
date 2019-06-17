@@ -174,4 +174,3 @@ app.listen(porta, function ()  //Abre o server na porta defenida na variavel por
 {   
   console.log('Online Porta: ' + porta);
 });
-// Obrigado deus por fazer eu conseguir fazer isso
