@@ -10,6 +10,7 @@ var linkEnc = "";
 var clicks = clicksF();
 var linkfeito;
 
+app.disable('x-powered-by');
 app.use (bodyParser.urlencoded ({extended: true}));
 app.use (express.static('views/public'));
 
@@ -151,7 +152,7 @@ function salvar(linkfeito, link) //Salva o linkCurto e linkOriginal no banco de 
   
 function clicksF()
 {
-  var clicksS = fs.readFileSync('./clicks.json', 'utf-8', function (err, data) 
+  var clicksS = fs.readFileSync('./clicks.json', 'utf8', function (err, data) 
   {
     if(err) throw err;
     var clicksS = JSON.stringify(data);
