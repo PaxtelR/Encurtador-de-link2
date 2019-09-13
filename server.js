@@ -13,7 +13,6 @@ var linkfeito;
 app.disable('x-powered-by');
 app.use (bodyParser.urlencoded ({extended: true}));
 app.use (express.static('views/public'));
-
 app.set ('view engine','ejs');
 
 

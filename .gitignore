@@ -1,2 +1,6 @@
-.node_modules
-.vscode
+#Ignorar essas pastas
+node_modules/
+.vscode/
+
+#Ignorar esses arquivos
+package-lock.json
